@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    /* border: 1px solid red; */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    transition: 2s;
+}
+
+#sketchpad {
+    width: 50%;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.quadrant {
+    background-color: aquamarine;
+    transition: 0.2s;
+}
+
+#controls {
+    width: 18%;
+    display: flex;
+    justify-content: space-between;
+}
