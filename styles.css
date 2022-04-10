@@ -10,10 +10,15 @@ html {
 body {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    color: rgb(27, 44, 77);
 }
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100vw;
@@ -21,19 +26,54 @@ body {
     transition: 2s;
 }
 
+.controls {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.rgb-sliders {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.slider {
+    background: #d3d3d3;
+    width: 100px;
+}
+
+#color-preview {
+    height: 35px;
+    width: 35px;
+    background-color: coral;
+    margin-left: 10px;
+    transition: 0.1s;
+}
+
+.selectable {
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.selectable:hover {
+    color: cornflowerblue;
+}
+
+.selectable:active {
+    color: rgb(37, 54, 87);
+}
+
 #sketchpad {
     width: 50%;
     flex-wrap: wrap;
     display: flex;
+    cursor: crosshair;
+    border: 2px solid black;
 }
 
 .quadrant {
-    background-color: aquamarine;
     transition: 0.2s;
-}
-
-#controls {
-    width: 18%;
-    display: flex;
-    justify-content: space-between;
 }

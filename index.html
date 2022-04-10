@@ -9,16 +9,16 @@
     </head>
     <body>
         <div class="container">
-            <div id="sketchpad"></div>
-            <div id="controls">
-                <div class="control-labels">
-                    <div class="control-label">Color: </div>
-                    <div class="control-label">Something else: </div>
-                </div>
-                <div class="control-data">
-                    <div id="currentColor" class="control-data">rgb(255, 255, 255)</div>
-                </div>
+            <div class="controls">
+                <div id="reset" class="selectable" onclick="resetGrid()">RESET SKETCH</div>
+                <div class="rgb-sliders">
+                    <input type="range" min="0" max="255" value="0" class="slider" id="r-slider">
+                    <input type="range" min="0" max="255" value="0" class="slider" id="g-slider">
+                    <input type="range" min="0" max="255" value="0" class="slider" id="b-slider">
+                    <div id="color-preview"></div>
+                  </div>
             </div>
+            <div id="sketchpad"></div>
         </div>
     </body>
 </html>
